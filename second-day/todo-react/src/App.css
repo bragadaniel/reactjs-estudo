@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  animation: App-logo-spin infinite 60s linear;
   height: 80px;
 }
 
@@ -44,6 +44,27 @@ ul {
 li {
   list-style-type: none;
 }
+li span.delete-item {
+  visibility: hidden;
+}
+
+span.delete-item a {
+  text-decoration: none;
+  color:red;
+}
+
+li:hover span.delete-item {
+  visibility: visible;
+}
 .error{
   color: red;
+}
+
+.Footer a {
+  padding-left:2px;
+  padding-right:2px;
+  padding-bottom: 100px;
+}
+.Footer a.active {
+  font-weight:bold;
 }
